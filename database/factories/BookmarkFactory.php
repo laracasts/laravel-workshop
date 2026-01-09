@@ -2,15 +2,15 @@
 
 namespace Database\Factories;
 
+use App\Models\Bookmark;
 use App\Models\Post;
-use App\Models\PostBookmark;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Carbon;
 
-class PostBookmarkFactory extends Factory
+class BookmarkFactory extends Factory
 {
-    protected $model = PostBookmark::class;
+    protected $model = Bookmark::class;
 
     public function definition(): array
     {
