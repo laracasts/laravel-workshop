@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up()
     {
-        Schema::create('post_bookmarks', function (Blueprint $table) {
+        Schema::create('bookmarks', function (Blueprint $table) {
             $table->id();
             $table->foreignId('post_id');
             $table->foreignId('user_id');
@@ -17,6 +17,6 @@ return new class extends Migration {
 
     public function down()
     {
-        Schema::dropIfExists('post_bookmarks');
+        Schema::dropIfExists('bookmarks');
     }
 };
